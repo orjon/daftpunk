@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  background-color: #222;
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  user-select: none; //make text unhighlightable
+
+}
+
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  /*
+  Introduced in IE 10.
+  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+html, body, {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  height: 250px;
+}
+
+
+
+img {
+  height: 200px;
+    cursor: pointer;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  height: 100%;
+  padding: 0 0 15px 0;
+}
+
+#triggerButtons {
+  width: 85vw;
+  height:100%;
+  display:flex;
+  align-items: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.button {
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #111;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  flex-basis:  25%;
+  height: 100%;
+  border-radius: 7px;
+  border: 1px solid #222;
+  background-color: #333;
+  box-shadow: 0px 0px 18px #000;
+}
+
+.clicked{
+  background-color: #00CCFF;
+  border: 1px solid #3333FF;
+  box-shadow: 0px 0px 15px #5555FF;
+  color: #FFF;
+  text-shadow: 0px 0px 10px #DDDDFF;
+}
+
+
+.row {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideContainer {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #111;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 25px;
+  background: #222;
+  cursor: pointer;
+  border: 1px solid black
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 10px;
+  background: #4CAF50;
+  cursor: pointer;
+}
