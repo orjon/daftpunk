@@ -22,6 +22,15 @@ html, body, {
   height: 100%;
 }
 
+.helmets {
+  height: 200px;
+  cursor: pointer;
+}
+
+.helmets:hover {
+  background-image: url('./../images/DaftPunk_helmet_selected.png');
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -38,12 +47,6 @@ header {
   height: 250px;
 }
 
-
-
-img {
-  height: 200px;
-    cursor: pointer;
-}
 
 main{
   display: flex;
