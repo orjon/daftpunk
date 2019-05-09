@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
-  console.log('DaftPunk : sample triggers')
+  console.log('www.orjon.com')
+  console.log('Daft Punk Sample Board v2.0 2019-05-09')
+  console.log('http://www.orjon.com/daftpunk')
 
   const helmets = document.querySelector('.helmets')
 
