@@ -40,10 +40,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const buttonWorkit = document.querySelector('.workit')
 
 
-helmets.addEventListener('mousedown', (e) => {
+  helmets.addEventListener('mousedown', (e) => {
     console.log('reset')
     location.reload()
-})
+  })
 
 
   let speed = 1
